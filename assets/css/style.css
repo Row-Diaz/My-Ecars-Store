@@ -6,7 +6,10 @@
 
 .navbar-ppal {
   background-color: rgb(4, 67, 150);
+  display: flex;
+  grid-area: navbar;
   color: aliceblue;
+  height: 100px;
 }
 
 a.navbar-brand {
@@ -21,21 +24,27 @@ span.navbar-toggler-icon {
   background-color: rgb(4, 67, 150);
 }
 
+/* FILTRO DE BUSQUEDA */
 .container {
   display: flex;
+  grid-area: filtro;
   flex-direction: column;
   text-align: center;
   background-color: grey;
   color: antiquewhite;
   padding: 20px;
+  
+  
 }
 
 /* SECCION DEL MAIN */
 
 main {
   display: flex;
+  grid-area: main;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:center;
+  gap: 10px;
   
 }
 
@@ -61,6 +70,7 @@ div.card-body {
 
 footer {
   background-color: rgb(4, 67, 150);
+  grid-area: footer;
   color: antiquewhite;
   height: 80px;
   justify-items: center;
@@ -70,3 +80,61 @@ footer img {
   height: 30px;
   width: 30px;
 }
+
+
+/* VERSION DESKTOP */
+@media (min-width: 576px) {
+
+    .navbar-ppal {
+        background-color: rgb(4, 67, 150);
+        display: grid;
+        flex-direction: row;
+       
+        align-items: start;
+        height: 100vh;
+        grid-area: navbar;
+        color: aliceblue;
+        width: 100%;
+      }
+
+    .container {
+        display: flex;
+        align-items: center;
+        align-content: start;
+        grid-area: filtro;
+        text-align: center;
+        background-color: grey;
+        color: antiquewhite;
+        padding: 20px;
+        margin-top: 0%;
+
+        
+      }
+    body {
+        display: flex;
+        margin-top: 0%;
+    }
+
+      footer {
+        background-color: rgb(4, 67, 150);
+        color: antiquewhite;
+        display: flex;
+        align-items: center;
+      
+        justify-items:center;
+       
+        padding: 10px;
+      }
+
+
+
+
+    .grid-container {
+    display: grid;
+    grid-template-columns:15% 1fr;
+    grid-template-areas:
+        "filtro filtro "
+        "navbar main "
+        "footer main";
+    }
+  }
