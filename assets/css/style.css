@@ -101,6 +101,28 @@ footer img {
         grid-area: navbar;
         color: aliceblue;
         width: 100%;
+        
+      }
+
+      .container-fluid{
+        display: flex;
+        flex-direction: column;
+      }
+
+      #navbarNav{
+        display: flex;
+        flex-direction:column;
+        /* justify-content: flex-end; */
+        align-items: center;
+        /* background-color: blueviolet; */
+        height:300px;
+        width: 193px;
+        
+      }
+
+      #navbarNav ul{
+        display: flex;
+        flex-direction: column;
       }
 
      .container {
