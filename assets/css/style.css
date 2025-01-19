@@ -95,8 +95,8 @@ footer img {
         background-color: rgb(4, 67, 150);
         display:flex;
         flex-direction:column;
-       align-content:start;
-       justify-content:start ;
+        align-content:start;
+        justify-content:start ;
         height: 100%;
         grid-area: navbar;
         color: aliceblue;
@@ -106,7 +106,13 @@ footer img {
 
       .container-fluid{
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
+        justify-items: ;
+      }
+
+      .navbar-ppal img{
+        height: 30px;
+        width: 30px;
       }
 
       #navbarNav{
@@ -125,7 +131,7 @@ footer img {
         flex-direction: column;
       }
 
-     .container {
+      .container {
         display: flex;
         align-items: center;
         align-content: start;
